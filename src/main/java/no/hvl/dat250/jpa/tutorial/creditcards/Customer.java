@@ -22,28 +22,4 @@ public class Customer {
 
     @ManyToMany
     private Set<CreditCard> creditCards = new HashSet<>();
-
-
-
-
-//     public String getName() {
-//         // TODO: implement method! 
-//         return name; 
-//     }
-
-//     public void setName(String name) {
-//         this.name = name;
-//     }
-
-//     @ManyToMany
-//     public Set<Address> getAddresses() {
-//         // TODO: implement method!
-//         return addresses;
-//     }
-
-//     @ManyToMany
-//     public Set<CreditCard> getCreditCards() {
-//         // TODO: implement method!
-//         return creditCards;
-//     }
 }

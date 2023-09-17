@@ -22,31 +22,4 @@ public class CreditCard {
 
     @ManyToOne
     private Bank owningBank;
-
-    
-
-    // public Integer getNumber() {
-    //     // TODO: implement method!
-    //     return number;
-    // }
-
-    // public Integer getBalance() {
-    //     // TODO: implement method!
-    //     return balance;
-    // }
-
-    // public Integer getCreditLimit() {
-    //     // TODO: implement method!
-    //     return creditLimit;
-    // }
-
-    // public Pincode getPincode() {
-    //     // TODO: implement method!
-    //     return pincode;
-    // }
-
-    // public Bank getOwningBank() {
-    //     // TODO: implement method!
-    //     return myBank;
-    // }
 }

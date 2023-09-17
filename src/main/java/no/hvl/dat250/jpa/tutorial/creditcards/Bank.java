@@ -18,18 +18,4 @@ public class Bank {
 
     @OneToMany(mappedBy = "owningBank")
     private Set<CreditCard> ownedCards = new HashSet<>();
-
-    // public Long getId() {
-    //     return id;
-    // }
-
-    // public String getName() {
-    //     // TODO: implement method!
-    //     return name;
-    // }
-
-    // public Set<CreditCard> getOwnedCards() {
-    //     // TODO: implement method!
-    //     return creditCards;
-    // }
 }

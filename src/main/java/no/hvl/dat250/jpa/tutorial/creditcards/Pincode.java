@@ -14,18 +14,4 @@ public class Pincode {
     private Long id;
     private String code;
     private Integer count;
-
-    // public Long getId() {
-    //     return id;
-    // }
-
-    // public String getCode() {
-    //     // TODO: implement method!
-    //     return pincode;
-    // }
-
-    // public Integer getCount() {
-    //     // TODO: implement method!
-    //     return count;
-    // }
 }

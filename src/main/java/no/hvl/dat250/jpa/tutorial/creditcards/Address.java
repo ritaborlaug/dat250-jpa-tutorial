@@ -1,6 +1,5 @@
 package no.hvl.dat250.jpa.tutorial.creditcards;
 
-import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
 import lombok.Setter;
@@ -20,20 +19,4 @@ public class Address {
     
     @ManyToMany(mappedBy= "addresses")
     private Set<Customer> owners = new HashSet<>();
-    
-
-    // public String getStreet() {
-    //     // TODO: implement method!
-    //     return street;
-    // }
-
-    // public Integer getNumber() {
-    //     // TODO: implement method!
-    //     return number;
-    // }
-
-    // public Set<Customer> getOwners() {
-    //     // TODO: implement method!
-    //     return customers;
-    // }
 }
