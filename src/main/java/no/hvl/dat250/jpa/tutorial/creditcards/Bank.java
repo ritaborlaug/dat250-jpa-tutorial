@@ -2,24 +2,34 @@ package no.hvl.dat250.jpa.tutorial.creditcards;
 
 import jakarta.persistence.*;
 import java.util.Collection;
+import java.util.HashSet;
+import java.util.Set;
+import lombok.Setter;
+import lombok.Getter;
 
+@Setter
+@Getter
 @Entity
 public class Bank {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    private String name;
 
-    public Long getId() {
-        return id;
-    }
+    @OneToMany(mappedBy = "owningBank")
+    private Set<CreditCard> ownedCards = new HashSet<>();
 
-    public String getName() {
-        // TODO: implement method!
-        return null;
-    }
+    // public Long getId() {
+    //     return id;
+    // }
 
-    public Collection<CreditCard> getOwnedCards() {
-        // TODO: implement method!
-        return null;
-    }
+    // public String getName() {
+    //     // TODO: implement method!
+    //     return name;
+    // }
+
+    // public Set<CreditCard> getOwnedCards() {
+    //     // TODO: implement method!
+    //     return creditCards;
+    // }
 }
